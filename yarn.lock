@@ -471,6 +471,11 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@heroicons/vue@^2.0.17":
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/@heroicons/vue/-/vue-2.0.17.tgz#4c23f26a715c2931c0d4fd5d2e77f8ede7a6a77b"
+  integrity sha512-M5P6Y9tmctbtv/IC1dO5vTw9xqppYxm/5BKuL4hGlxxLvaxbnTmMAoxTIzezSdYAaLh63emgOCBMa+mxphRxUQ==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"
@@ -4455,6 +4460,11 @@ vue-eslint-parser@^9.0.1, vue-eslint-parser@^9.1.1:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue-profile-avatar@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vue-profile-avatar/-/vue-profile-avatar-1.2.0.tgz#7920656a402b4679c642ab598978e606d1bca156"
+  integrity sha512-fCNh4yaVTMmgEUakDQe8ff05etqwU3gbgAIxH3s56A/fZRhpUEfEwxUvqHWX5mFPj08XgRBdUWM7IPNWrDGakg==
 
 vue-router@^4.1.6:
   version "4.1.6"
