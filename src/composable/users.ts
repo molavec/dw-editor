@@ -1,6 +1,6 @@
 import { storeToRefs } from 'pinia';
 import { useUserStore } from '../stores/userStore';
-import type UserType from '../interfaces/UserType';
+import type UserType from '../types/UserType';
 import { register, login } from '../lib/express-api/user';
 
 export const useUsers = () => {
