@@ -1,21 +1,7 @@
-# dw-editor
+# Digital Writer Editor
 
-This template should help get you started developing with Vue 3 in Vite.
+A fast web editor for creative writers.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 ## Customize configuration
 
@@ -24,31 +10,31 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
-npm install
+yarn install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+yarn dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+yarn build
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:unit
+yarn test:unit
 ```
 
 ### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
 
 ```sh
-npm run test:e2e:dev
+yarn test:e2e:dev
 ```
 
 This runs the end-to-end tests against the Vite development server.
@@ -57,12 +43,31 @@ It is much faster than the production build.
 But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
 
 ```sh
-npm run build
-npm run test:e2e
+yarn build
+yarn test:e2e
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-npm run lint
+yarn lint
 ```
+
+
+## Typescript Notes
+
+* How to fix "Flag 'importsNotUsedAsValues' is deprecated and will stop functioning in TypeScript 5.5."?
+
+As vue package typecript options extends include `importsNotUsedAsValues` 
+
+``` json
+"extends": "@vue/tsconfig/tsconfig.web.json",
+```
+
+is necessary deactivate option and replace for new one `"verbatimModuleSyntax": true`
+
+https://stackoverflow.com/questions/75449286/how-to-fix-flag-importsnotusedasvalues-is-deprecated-and-will-stop-functionin
+
+## Eslint and Prettier Notes
+
+Prettier custom options are deactivated in favor to eslint rules.
