@@ -102,13 +102,13 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useUsers } from '../../composable/users';
-import router from '../../router';
+import { useUsers } from '../composable/users';
+import router from '../router';
 // import { signInUser } from '../../firebase/auth';
 // import { useAuth } from '../../composable/useAuth';
 
-import { useNotifications } from '../../composable/notifications';
-import type UserType from '@/interfaces/UserType';
+import { useNotifications } from '../composable/notifications';
+import type UserType from '@/types/UserType';
 
 // input reactive variables
 const email = ref('');

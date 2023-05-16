@@ -25,6 +25,12 @@ yarn dev
 yarn build
 ```
 
+### Storybook for Development
+
+```sh
+yarn storybook
+```
+
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
@@ -53,6 +59,10 @@ yarn test:e2e
 yarn lint
 ```
 
+## Storybook +  Tailwind Notes
+
+More Info:
+https://storybook.js.org/recipes/tailwindcss
 
 ## Typescript Notes
 
